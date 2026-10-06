@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tema-claro {
+    background-color: #f5f7fa;
+    color: #1a1a2e;
+}
+
+.tema-oscuro {
+    background-color: #1a1a2e;
+    color: #f5f7fa;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.subtitulo {
+    text-align: center;
+    margin-bottom: 2rem;
+    opacity: 0.7;
+    font-size: 1rem;
+}
+
+#saludo {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    background: rgba(120, 100, 255, 0.1);
+    font-weight: 500;
+}
+
+section {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.tema-claro section {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tema-oscuro section {
+    background-color: #16213e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #7864ff;
+}
+
+.grupo-campos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+label {
+    font-weight: 500;
+}
+
+select {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.tema-oscuro select {
+    background-color: #0f3460;
+    color: #f5f7fa;
+    border-color: #533483;
+}
+
+select:focus {
+    outline: none;
+    border-color: #7864ff;
+}
+
+.grupo-botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#cambiar-nombre {
+    background-color: #7864ff;
+    color: white;
+}
+
+#cambiar-nombre:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(120, 100, 255, 0.4);
+}
+
+#olvidarme {
+    background-color: #e94560;
+    color: white;
+}
+
+#olvidarme:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(233, 69, 96, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#contador-visitas {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#ultima-visita {
+    margin-top: 0.5rem;
+    opacity: 0.8;
+    font-size: 0.95rem;
+}
+
+.info-corta {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    background: rgba(255, 193, 7, 0.15);
+    font-size: 0.9rem;
+    opacity: 0.85;
+}

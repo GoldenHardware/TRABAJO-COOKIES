@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookieLab - Práctica de Cookies</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="tema-claro">
+    <main class="contenedor">
+        <h1>🍪 CookieLab</h1>
+        <p class="subtitulo">Práctica de cookies: pedir, guardar, recordar y borrar datos</p>
+
+        <p id="saludo"></p>
+
+        <section class="preferencias">
+            <h2>Preferencias</h2>
+            <div class="grupo-campos">
+                <label for="tema-select">Tema:</label>
+                <select id="tema-select">
+                    <option value="claro">Claro</option>
+                    <option value="oscuro">Oscuro</option>
+                </select>
+
+                <label for="idioma-select">Idioma del saludo:</label>
+                <select id="idioma-select">
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="contador">
+            <h2>Contador de visitas</h2>
+            <p id="contador-visitas"></p>
+            <p id="ultima-visita"></p>
+        </section>
+
+        <section class="panel-control">
+            <h2>Panel de control</h2>
+            <div class="grupo-botones">
+                <button id="cambiar-nombre">Cambiar mi nombre</button>
+                <button id="olvidarme">Olvidarme</button>
+            </div>
+            <p id="prueba-corta" class="info-corta"></p>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
